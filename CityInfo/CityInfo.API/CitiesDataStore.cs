@@ -8,7 +8,7 @@ namespace CityInfo.API
         public List<CityDto> Cities { get; set; }       
         
         //This is a singleton class
-        public static CitiesDataStore Current { get; } = new CitiesDataStore();
+        //public static CitiesDataStore Current { get; } = new CitiesDataStore();
 
         public CitiesDataStore()
         {

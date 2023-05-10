@@ -53,9 +53,35 @@
               "target": "Package",
               "version": "[6.0.16, )"
             },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
+            "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
+            },
+            "microsoft.entityframeworkcore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "serilog.sinks.console": {
+              "target": "Package",
+              "version": "[4.1.0, )"
             }
           },
           "imports": [

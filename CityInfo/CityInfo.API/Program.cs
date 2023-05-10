@@ -1,14 +1,24 @@
-using static Microsoft.Extensions.Logging.EventSource.LoggingEventSource;
-using System.Numerics;
-using System.Threading;
-using Microsoft.AspNetCore.Http;
-using System.Reflection.Metadata;
+using CityInfo.API;
+using CityInfo.API.DbContexts;
+using CityInfo.API.Services;
 using Microsoft.AspNetCore.StaticFiles;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
+using Serilog;
+
+
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Debug()
+    .WriteTo.Console()
+    .WriteTo.File("logs/cityinfo.txt", rollingInterval: RollingInterval.Day)
+    .CreateLogger();
 
 var builder = WebApplication.CreateBuilder(args);
 
-//Add services to the container.
+builder.Host.UseSerilog();
 
+
+//Add services to the container.
 builder.Services.AddControllers(options =>
 {
     options.ReturnHttpNotAcceptable = true;
@@ -22,6 +32,19 @@ builder.Services.AddSwaggerGen();
 //By registering this singleton service, the application ensures that there is only one instance of the service throughout the lifetime of the application.
 //This can help improve performance and reduce memory usage, since multiple instances of the same service do not need to be created and managed.
 builder.Services.AddSingleton<FileExtensionContentTypeProvider>();
+
+// use this to switch between what we want to use in debug mode and what we want to use in release mode
+#if DEBUG
+// whenever we have an IMailService we will get a LocalMailService
+builder.Services.AddTransient<IMailService, LocalMailService>();
+#else
+builder.Services.AddTransient<IMailService, CloudMailService>();
+#endif
+
+builder.Services.AddSingleton<CitiesDataStore>();
+builder.Services.AddDbContext<CityInfoContext>(
+    dbContextOptions => dbContextOptions.UseSqlite(
+        builder.Configuration["ConnectionStrings:CityInfoDBConnectionString"]));
 
 var app = builder.Build();
 
