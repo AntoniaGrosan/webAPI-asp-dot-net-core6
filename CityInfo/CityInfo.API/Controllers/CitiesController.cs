@@ -1,4 +1,6 @@
-﻿using CityInfo.API.Models;
+﻿using CityInfo.API.Migrations;
+using CityInfo.API.Models;
+using CityInfo.API.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,18 +11,34 @@ namespace CityInfo.API.Controllers
     [Route("api/cities")]
     public class CitiesController : ControllerBase
     {
-        private readonly CitiesDataStore _citiesDataStore;
+        private readonly CityInfoRepository _cityInfoRepository;
 
-        public CitiesController(CitiesDataStore citiesDataStore)
+        public CitiesController(CityInfoRepository cityInfoRepository)
         {
-            _citiesDataStore = citiesDataStore ?? throw new ArgumentNullException(nameof(citiesDataStore));
+            _cityInfoRepository = cityInfoRepository ?? throw new ArgumentNullException(nameof(cityInfoRepository));
         }
+
 
         // ActionResult<T> is a generic class that is used to represent the result of an action method in a controller
         [HttpGet]
-        public ActionResult<IEnumerable<CityDto>> GetCities()
+        public async Task<ActionResult<IEnumerable<CityWithoutPoisDto>>> GetCities()
         {
-            return Ok(_citiesDataStore.Cities);
+            var cityEntities = await _cityInfoRepository.GetCitiesAsync();
+            
+            var results = new List<CityWithoutPoisDto>();
+            foreach (var cityEntity in cityEntities)
+            {
+                results.Add(new CityWithoutPoisDto
+                {
+                    Id = cityEntity.Id,
+                    Name = cityEntity.Name,
+                    Description = cityEntity.Description,
+                });
+            }
+
+            return Ok(results);
+            
+            //return Ok(_citiesDataStore.Cities);
 
             /*
             // Specifying 'object' here allows us to pass a list of anonymous objects to the JsonResult constructor,
@@ -33,17 +51,17 @@ namespace CityInfo.API.Controllers
             */
         }
 
-        [HttpGet("{id}")]
-        public ActionResult<CityDto> GetCity(int id)
-        {
-            var cityToReturn = _citiesDataStore.Cities.FirstOrDefault(city => city.Id == id);
+        //[HttpGet("{id}")]
+        //public ActionResult<CityDto> GetCity(int id)
+        //{
+        //    var cityToReturn = _citiesDataStore.Cities.FirstOrDefault(city => city.Id == id);
 
-            if (cityToReturn == null)
-            {
-                return NotFound();
-            }
+        //    if (cityToReturn == null)
+        //    {
+        //        return NotFound();
+        //    }
 
-            return Ok(cityToReturn);
-        }
+        //    return Ok(cityToReturn);
+        //}
     }
 }

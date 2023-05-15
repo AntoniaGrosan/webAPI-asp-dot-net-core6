@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Antonia.Grosan\\Desktop\\projects\\webapis\\webAPI-asp-dot-net-core6\\CityInfo\\CityInfo.API\\CityInfo.API.csproj": {}
+    "C:\\Users\\Antonia.Grosan\\Desktop\\Antonia\\Projects\\webAPI-asp-dot-net-core6\\CityInfo\\CityInfo.API\\CityInfo.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Antonia.Grosan\\Desktop\\projects\\webapis\\webAPI-asp-dot-net-core6\\CityInfo\\CityInfo.API\\CityInfo.API.csproj": {
+    "C:\\Users\\Antonia.Grosan\\Desktop\\Antonia\\Projects\\webAPI-asp-dot-net-core6\\CityInfo\\CityInfo.API\\CityInfo.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Antonia.Grosan\\Desktop\\projects\\webapis\\webAPI-asp-dot-net-core6\\CityInfo\\CityInfo.API\\CityInfo.API.csproj",
+        "projectUniqueName": "C:\\Users\\Antonia.Grosan\\Desktop\\Antonia\\Projects\\webAPI-asp-dot-net-core6\\CityInfo\\CityInfo.API\\CityInfo.API.csproj",
         "projectName": "CityInfo.API",
-        "projectPath": "C:\\Users\\Antonia.Grosan\\Desktop\\projects\\webapis\\webAPI-asp-dot-net-core6\\CityInfo\\CityInfo.API\\CityInfo.API.csproj",
+        "projectPath": "C:\\Users\\Antonia.Grosan\\Desktop\\Antonia\\Projects\\webAPI-asp-dot-net-core6\\CityInfo\\CityInfo.API\\CityInfo.API.csproj",
         "packagesPath": "C:\\Users\\Antonia.Grosan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Antonia.Grosan\\Desktop\\projects\\webapis\\webAPI-asp-dot-net-core6\\CityInfo\\CityInfo.API\\obj\\",
+        "outputPath": "C:\\Users\\Antonia.Grosan\\Desktop\\Antonia\\Projects\\webAPI-asp-dot-net-core6\\CityInfo\\CityInfo.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -103,7 +103,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
