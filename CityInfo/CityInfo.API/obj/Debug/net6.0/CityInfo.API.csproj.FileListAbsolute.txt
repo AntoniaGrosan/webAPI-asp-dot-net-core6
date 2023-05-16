@@ -190,3 +190,5 @@ C:\Users\Antonia.Grosan\Desktop\Antonia\Projects\webAPI-asp-dot-net-core6\CityIn
 C:\Users\Antonia.Grosan\Desktop\Antonia\Projects\webAPI-asp-dot-net-core6\CityInfo\CityInfo.API\obj\Debug\net6.0\CityInfo.API.pdb
 C:\Users\Antonia.Grosan\Desktop\Antonia\Projects\webAPI-asp-dot-net-core6\CityInfo\CityInfo.API\obj\Debug\net6.0\CityInfo.API.genruntimeconfig.cache
 C:\Users\Antonia.Grosan\Desktop\Antonia\Projects\webAPI-asp-dot-net-core6\CityInfo\CityInfo.API\obj\Debug\net6.0\ref\CityInfo.API.dll
+C:\Users\Antonia.Grosan\Desktop\Antonia\Projects\webAPI-asp-dot-net-core6\CityInfo\CityInfo.API\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\Antonia.Grosan\Desktop\Antonia\Projects\webAPI-asp-dot-net-core6\CityInfo\CityInfo.API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

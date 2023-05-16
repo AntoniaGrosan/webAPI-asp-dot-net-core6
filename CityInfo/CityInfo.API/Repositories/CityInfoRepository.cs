@@ -13,6 +13,11 @@ namespace CityInfo.API.Repositories
             _context = context ?? throw new ArgumentException(nameof(context));
         }
 
+        public async Task<bool> CityExists(int cityId)
+        {
+            return await _context.Cities.AnyAsync(c => c.Id == cityId);
+        }
+
         public async Task<IEnumerable<City>> GetCitiesAsync()
         {
             return await _context.Cities.OrderBy(c => c.Name).ToListAsync();

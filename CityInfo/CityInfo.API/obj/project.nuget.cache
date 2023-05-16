@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Uuqfz6U1/nm1OmkewFnCHazgDm7GOWbBvrX6akWGGTmNzkHFlSbqM0BIIYej1eaJg1U5/u1r1vJ3G/KlxorcsA==",
+  "dgSpecHash": "BtnzuP5r/kesgGI88Sm8dEkEytLKpTs3h2wVg1n+bJkKBUn2Wp1pqb6GIsn6eAbb62DmfU7Eo0aYn1mW+Rtcqg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Antonia.Grosan\\Desktop\\Antonia\\Projects\\webAPI-asp-dot-net-core6\\CityInfo\\CityInfo.API\\CityInfo.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Antonia.Grosan\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\Antonia.Grosan\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\Antonia.Grosan\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Antonia.Grosan\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\7.0.5\\microsoft.aspnetcore.jsonpatch.7.0.5.nupkg.sha512",
     "C:\\Users\\Antonia.Grosan\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\6.0.16\\microsoft.aspnetcore.mvc.newtonsoftjson.6.0.16.nupkg.sha512",
