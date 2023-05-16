@@ -11,9 +11,9 @@ namespace CityInfo.API.Controllers
     [Route("api/cities")]
     public class CitiesController : ControllerBase
     {
-        private readonly CityInfoRepository _cityInfoRepository;
+        private readonly ICityInfoRepository _cityInfoRepository;
 
-        public CitiesController(CityInfoRepository cityInfoRepository)
+        public CitiesController(ICityInfoRepository cityInfoRepository)
         {
             _cityInfoRepository = cityInfoRepository ?? throw new ArgumentNullException(nameof(cityInfoRepository));
         }
