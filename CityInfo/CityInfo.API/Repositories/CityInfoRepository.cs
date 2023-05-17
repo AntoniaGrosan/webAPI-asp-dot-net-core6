@@ -13,7 +13,7 @@ namespace CityInfo.API.Repositories
             _context = context ?? throw new ArgumentException(nameof(context));
         }
 
-        public async Task<bool> CityExists(int cityId)
+         public async Task<bool> CityExists(int cityId)
         {
             return await _context.Cities.AnyAsync(c => c.Id == cityId);
         }
@@ -23,7 +23,7 @@ namespace CityInfo.API.Repositories
             return await _context.Cities.OrderBy(c => c.Name).ToListAsync();
         }
 
-        public async Task<City?> GetCityAsync(int cityId, bool includePointsOfInterest)
+        public async Task<City?> GetCityAsync(int cityId, bool includePointsOfInterest = false)
         {
             if (includePointsOfInterest)
             {
@@ -50,6 +50,25 @@ namespace CityInfo.API.Repositories
             return await _context.PointsOfInterest
                 .Where(poi => poi.CityId == cityId)
                 .ToListAsync();
+        }
+
+        public async Task AddPointOfInterestForCityAsync(int cityId, PointOfInterest pointOfInterest)
+        {
+            var city = await GetCityAsync(cityId);
+            if(city != null)
+            {
+                city.PointsOfInterest.Add(pointOfInterest);
+            }
+
+        }
+        public async Task<bool> SaveChangesAsync()
+        {
+            return await _context.SaveChangesAsync() >= 0;
+        }
+
+        public void DeletePointOfInterest(PointOfInterest pointOfInterest)
+        {
+            _context.PointsOfInterest.Remove(pointOfInterest);
         }
     }
 }
