@@ -4,6 +4,7 @@ using CityInfo.API.Models;
 using CityInfo.API.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Text.Json;
 
 namespace CityInfo.API.Controllers
 {
@@ -14,6 +15,7 @@ namespace CityInfo.API.Controllers
     {
         private readonly ICityInfoRepository _cityInfoRepository;
         private readonly IMapper _mapper;
+        private const int maxCitiesPageSize = 20;
 
         public CitiesController(ICityInfoRepository cityInfoRepository, IMapper mapper)
         {
@@ -24,40 +26,21 @@ namespace CityInfo.API.Controllers
 
         // ActionResult<T> is a generic class that is used to represent the result of an action method in a controller
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<CityWithoutPoisDto>>> GetCities()
+        public async Task<ActionResult<IEnumerable<CityWithoutPoisDto>>> GetCities(
+            [FromQuery] string? name, string? searchQuery, int pageNumber = 1, int pageSize = 10)
         {
-            var cityEntities = await _cityInfoRepository.GetCitiesAsync();
+            if (pageSize > maxCitiesPageSize)
+            {
+                pageSize = maxCitiesPageSize;
+            }
+
+
+            var (cityEntities, paginationMetadata) = await _cityInfoRepository
+                .GetCitiesAsync(name, searchQuery, pageNumber, pageSize);
+
+            Response.Headers.Add("X-Pagination", JsonSerializer.Serialize(paginationMetadata));
 
             return Ok(_mapper.Map<IEnumerable<CityWithoutPoisDto>>(cityEntities));
-
-            #region Previous versions
-            // 2
-            //var results = new List<CityWithoutPoisDto>();
-            //foreach (var cityEntity in cityEntities)
-            //{
-            //    results.Add(new CityWithoutPoisDto
-            //    {
-            //        Id = cityEntity.Id,
-            //        Name = cityEntity.Name,
-            //        Description = cityEntity.Description,
-            //    });
-            //}
-            //return Ok(results);
-
-            // 1
-            //return Ok(_citiesDataStore.Cities);
-
-            // 0
-            /*
-            // Specifying 'object' here allows us to pass a list of anonymous objects to the JsonResult constructor,
-            // which can then serialize the data into a JSON response:
-            return new JsonResult(new List<object>
-            {
-                new { id = 1, Name = "New York City"},
-                new { id = 2, Name = "Chicago"}
-            });
-            */
-            #endregion
         }
 
         [HttpGet("{id}")]
@@ -76,15 +59,6 @@ namespace CityInfo.API.Controllers
             }
 
             return Ok(_mapper.Map<CityWithoutPoisDto>(cityEntity));
-
-            //var cityToReturn = _citiesDataStore.Cities.FirstOrDefault(city => city.Id == id);
-
-            //if (cityToReturn == null)
-            //{
-            //    return NotFound();
-            //}
-
-            //return Ok(cityToReturn);
         }
     }
 }

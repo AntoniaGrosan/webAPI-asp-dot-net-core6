@@ -1,5 +1,6 @@
 ﻿using CityInfo.API.DbContexts;
 using CityInfo.API.Entities;
+using CityInfo.API.Services;
 using Microsoft.EntityFrameworkCore;
 
 namespace CityInfo.API.Repositories
@@ -21,6 +22,39 @@ namespace CityInfo.API.Repositories
         public async Task<IEnumerable<City>> GetCitiesAsync()
         {
             return await _context.Cities.OrderBy(c => c.Name).ToListAsync();
+        }
+
+        public async Task<(IEnumerable<City>, PaginationMetadata)> GetCitiesAsync(
+            string? name, string? searchQuery, int pageNumber, int pageSize)
+        {
+            var citiesCollection = _context.Cities as IQueryable<City>;
+
+            if (!string.IsNullOrEmpty(name)) 
+            {
+                name = name.Trim();
+                citiesCollection = citiesCollection.Where(c => c.Name == name);
+            }
+
+            if (!string.IsNullOrWhiteSpace(searchQuery))
+            {
+                searchQuery = searchQuery.Trim();
+
+                citiesCollection = citiesCollection
+                    .Where(c => c.Name.Contains(searchQuery) ||
+                    (!string.IsNullOrEmpty(c.Description) && c.Description.Contains(searchQuery)));                    
+            }
+
+            var totalItemCount = await citiesCollection.CountAsync();
+
+            var paginationMetaData = new PaginationMetadata(totalItemCount, pageSize, pageNumber);
+
+            var collectionToReturn = await citiesCollection.
+                OrderBy(c => c.Name).
+                Skip(pageSize * (pageNumber - 1)).
+                Take(pageSize).
+                ToListAsync();
+
+            return (collectionToReturn, paginationMetaData);
         }
 
         public async Task<City?> GetCityAsync(int cityId, bool includePointsOfInterest = false)
