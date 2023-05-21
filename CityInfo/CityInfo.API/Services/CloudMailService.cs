@@ -1,12 +1,16 @@
-﻿namespace CityInfo.API.Services
+﻿using Microsoft.Extensions.Configuration;
+
+namespace CityInfo.API.Services
 {
     public class CloudMailService : IMailService
     {
+        private readonly IConfiguration _configuration;
         private readonly string _mailTo = string.Empty;
         private readonly string _mailFrom = string.Empty;
 
         public CloudMailService(IConfiguration configuration)
         {
+            _configuration = configuration ?? throw new ArgumentNullException(nameof(configuration));
             _mailTo = configuration["mailSettings:mailToAddress"];
             _mailFrom = configuration["mailSettings:mailFromAddress"];
         }

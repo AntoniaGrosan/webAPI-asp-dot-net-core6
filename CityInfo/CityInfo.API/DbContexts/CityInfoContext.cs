@@ -7,7 +7,6 @@ namespace CityInfo.API.DbContexts
     {
         // null! - indicates that even though the property is nullable, it will always be set to a non-null value before
         public DbSet<City> Cities { get; set; } = null!;
-
         public DbSet<PointOfInterest> PointsOfInterest { get; set; } = null!;
 
         public CityInfoContext(DbContextOptions<CityInfoContext> options)

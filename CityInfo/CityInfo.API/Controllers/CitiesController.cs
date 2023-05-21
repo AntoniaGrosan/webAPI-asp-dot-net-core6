@@ -1,14 +1,14 @@
 ﻿using AutoMapper;
-using CityInfo.API.Migrations;
 using CityInfo.API.Models;
 using CityInfo.API.Repositories;
-using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
 
 namespace CityInfo.API.Controllers
 {
     [ApiController]
+    [Authorize]
     // Can also add "api/[controller] BUT if we refactor it is not ok because the url will change
     [Route("api/cities")]
     public class CitiesController : ControllerBase
