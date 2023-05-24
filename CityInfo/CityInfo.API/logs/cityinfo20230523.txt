@@ -1,0 +1,281 @@
+2023-05-23 14:11:54.793 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-05-23 14:11:54.926 +03:00 [DBG] Hosting starting
+2023-05-23 14:11:54.970 +03:00 [INF] User profile is available. Using 'C:\Users\Antonia.Grosan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-05-23 14:11:54.973 +03:00 [DBG] Reading data from file 'C:\Users\Antonia.Grosan\AppData\Local\ASP.NET\DataProtection-Keys\key-5b6e286d-8141-4714-bc5b-22bc6f79e4c5.xml'.
+2023-05-23 14:11:54.983 +03:00 [DBG] Found key {5b6e286d-8141-4714-bc5b-22bc6f79e4c5}.
+2023-05-23 14:11:54.993 +03:00 [DBG] Considering key {5b6e286d-8141-4714-bc5b-22bc6f79e4c5} with expiration date 2023-08-19 11:48:22Z as default key.
+2023-05-23 14:11:54.996 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-05-23 14:11:54.999 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2023-05-23 14:11:55.000 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-05-23 14:11:55.004 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2023-05-23 14:11:55.007 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2023-05-23 14:11:55.011 +03:00 [DBG] Using key {5b6e286d-8141-4714-bc5b-22bc6f79e4c5} as the default key.
+2023-05-23 14:11:55.012 +03:00 [DBG] Key ring with default key {5b6e286d-8141-4714-bc5b-22bc6f79e4c5} was loaded during application startup.
+2023-05-23 14:11:55.133 +03:00 [DBG] Using development certificate: CN=localhost (Thumbprint: E9CC24F2CE38B848EA7D86F43AB3036475D81F7F)
+2023-05-23 14:11:55.161 +03:00 [INF] Now listening on: https://localhost:7005
+2023-05-23 14:11:55.162 +03:00 [INF] Now listening on: http://localhost:5142
+2023-05-23 14:11:55.163 +03:00 [DBG] Loaded hosting startup assembly CityInfo.API
+2023-05-23 14:11:55.163 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-05-23 14:11:55.164 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-05-23 14:11:55.166 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-23 14:11:55.166 +03:00 [INF] Hosting environment: Development
+2023-05-23 14:11:55.167 +03:00 [INF] Content root path: C:\Users\Antonia.Grosan\Desktop\Antonia\Projects\webAPI-asp-dot-net-core6\CityInfo\CityInfo.API\
+2023-05-23 14:11:55.169 +03:00 [DBG] Hosting started
+2023-05-23 14:12:32.233 +03:00 [DBG] Connection id "0HMQRFQDB0M6T" accepted.
+2023-05-23 14:12:32.242 +03:00 [DBG] Connection id "0HMQRFQDB0M6U" accepted.
+2023-05-23 14:12:32.242 +03:00 [DBG] Connection id "0HMQRFQDB0M6T" started.
+2023-05-23 14:12:32.243 +03:00 [DBG] Connection id "0HMQRFQDB0M6U" started.
+2023-05-23 14:12:32.284 +03:00 [DBG] Connection id "0HMQRFQDB0M6T" received FIN.
+2023-05-23 14:12:32.299 +03:00 [DBG] Connection 0HMQRFQDB0M6U established using the following protocol: "Tls12"
+2023-05-23 14:12:32.299 +03:00 [DBG] Connection 0HMQRFQDB0M6T established using the following protocol: "Tls12"
+2023-05-23 14:12:32.309 +03:00 [DBG] Connection id "0HMQRFQDB0M6T" is closed. The last processed stream ID was 0.
+2023-05-23 14:12:32.310 +03:00 [DBG] Connection id "0HMQRFQDB0M6T" sending FIN because: "The client closed the connection."
+2023-05-23 14:12:32.314 +03:00 [DBG] Connection id "0HMQRFQDB0M6T" stopped.
+2023-05-23 14:12:32.332 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7005/swagger - -
+2023-05-23 14:12:32.355 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-05-23 14:12:32.400 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7005/swagger - - - 301 0 - 70.3138ms
+2023-05-23 14:12:32.401 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7005/swagger/index.html - -
+2023-05-23 14:12:32.533 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-05-23 14:12:32.663 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7005/swagger/swagger-ui-bundle.js - -
+2023-05-23 14:12:32.663 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7005/swagger/swagger-ui-standalone-preset.js - -
+2023-05-23 14:12:32.663 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7005/_framework/aspnetcore-browser-refresh.js - -
+2023-05-23 14:12:32.663 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7005/_vs/browserLink - -
+2023-05-23 14:12:32.663 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7005/swagger/swagger-ui.css - -
+2023-05-23 14:12:32.664 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-05-23 14:12:32.669 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7005/swagger/index.html - - - 200 - text/html;charset=utf-8 267.9986ms
+2023-05-23 14:12:32.674 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7005/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 10.8616ms
+2023-05-23 14:12:32.676 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-05-23 14:12:32.698 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7005/swagger/swagger-ui.css - - - 200 143632 text/css 34.6365ms
+2023-05-23 14:12:32.700 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-05-23 14:12:32.700 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-05-23 14:12:32.703 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7005/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 39.8262ms
+2023-05-23 14:12:32.704 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7005/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 41.2514ms
+2023-05-23 14:12:32.715 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7005/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 52.0244ms
+2023-05-23 14:12:32.788 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7005/swagger/v1/swagger.json - -
+2023-05-23 14:12:32.800 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7005/swagger/favicon-32x32.png - -
+2023-05-23 14:12:32.802 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-05-23 14:12:32.803 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7005/swagger/favicon-32x32.png - - - 200 628 image/png 3.4200ms
+2023-05-23 14:12:32.908 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7005/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 119.5593ms
+2023-05-23 14:13:20.047 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7005/api/cities?pageNumber=1&pageSize=10 - -
+2023-05-23 14:13:20.051 +03:00 [DBG] The request path  does not match the path filter
+2023-05-23 14:13:20.072 +03:00 [DBG] 1 candidate(s) found for the request path '/api/cities'
+2023-05-23 14:13:20.077 +03:00 [DBG] Endpoint 'CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API)' with route pattern 'api/cities' is valid for the request path '/api/cities'
+2023-05-23 14:13:20.088 +03:00 [DBG] Request matched endpoint 'CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API)'
+2023-05-23 14:13:20.153 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-05-23 14:13:20.155 +03:00 [INF] Executing endpoint 'CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API)'
+2023-05-23 14:13:20.183 +03:00 [INF] Route matched with {action = "GetCities", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CityInfo.API.Models.CityWithoutPoisDto]]] GetCities(System.String, System.String, Int32, Int32) on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2023-05-23 14:13:20.186 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-05-23 14:13:20.187 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-05-23 14:13:20.190 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2023-05-23 14:13:20.194 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-05-23 14:13:20.195 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2023-05-23 14:13:20.196 +03:00 [DBG] Executing controller factory for controller CityInfo.API.Controllers.CitiesController (CityInfo.API)
+2023-05-23 14:13:20.322 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-05-23 14:13:20.453 +03:00 [DBG] Executed controller factory for controller CityInfo.API.Controllers.CitiesController (CityInfo.API)
+2023-05-23 14:13:20.458 +03:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' ...
+2023-05-23 14:13:20.459 +03:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' using the name '' in request data ...
+2023-05-23 14:13:20.460 +03:00 [DBG] Could not find a value in the request with name '' for binding parameter 'name' of type 'System.String'.
+2023-05-23 14:13:20.461 +03:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-05-23 14:13:20.461 +03:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-05-23 14:13:20.462 +03:00 [DBG] Attempting to validate the bound parameter 'name' of type 'System.String' ...
+2023-05-23 14:13:20.463 +03:00 [DBG] Done attempting to validate the bound parameter 'name' of type 'System.String'.
+2023-05-23 14:13:20.466 +03:00 [DBG] Attempting to bind parameter 'searchQuery' of type 'System.String' ...
+2023-05-23 14:13:20.467 +03:00 [DBG] Attempting to bind parameter 'searchQuery' of type 'System.String' using the name '' in request data ...
+2023-05-23 14:13:20.468 +03:00 [DBG] Could not find a value in the request with name '' for binding parameter 'searchQuery' of type 'System.String'.
+2023-05-23 14:13:20.468 +03:00 [DBG] Done attempting to bind parameter 'searchQuery' of type 'System.String'.
+2023-05-23 14:13:20.469 +03:00 [DBG] Done attempting to bind parameter 'searchQuery' of type 'System.String'.
+2023-05-23 14:13:20.470 +03:00 [DBG] Attempting to validate the bound parameter 'searchQuery' of type 'System.String' ...
+2023-05-23 14:13:20.471 +03:00 [DBG] Done attempting to validate the bound parameter 'searchQuery' of type 'System.String'.
+2023-05-23 14:13:20.473 +03:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' ...
+2023-05-23 14:13:20.474 +03:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' using the name 'pageNumber' in request data ...
+2023-05-23 14:13:20.477 +03:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-05-23 14:13:20.477 +03:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-05-23 14:13:20.478 +03:00 [DBG] Attempting to validate the bound parameter 'pageNumber' of type 'System.Int32' ...
+2023-05-23 14:13:20.480 +03:00 [DBG] Done attempting to validate the bound parameter 'pageNumber' of type 'System.Int32'.
+2023-05-23 14:13:20.482 +03:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' ...
+2023-05-23 14:13:20.482 +03:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' using the name 'pageSize' in request data ...
+2023-05-23 14:13:20.483 +03:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-05-23 14:13:20.484 +03:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-05-23 14:13:20.485 +03:00 [DBG] Attempting to validate the bound parameter 'pageSize' of type 'System.Int32' ...
+2023-05-23 14:13:20.485 +03:00 [DBG] Done attempting to validate the bound parameter 'pageSize' of type 'System.Int32'.
+2023-05-23 14:13:21.225 +03:00 [DBG] Entity Framework Core 7.0.5 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.5' with options: None
+2023-05-23 14:13:21.255 +03:00 [DBG] Compiling query expression: 
+'DbSet<City>()
+    .Count()'
+2023-05-23 14:13:21.466 +03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<int>(
+    asyncEnumerable: new SingleQueryingEnumerable<int>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT COUNT(*)
+            FROM Cities AS c), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, int>, 
+        CityInfo.API.DbContexts.CityInfoContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2023-05-23 14:13:21.505 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-05-23 14:13:21.508 +03:00 [DBG] Creating DbConnection.
+2023-05-23 14:13:21.525 +03:00 [DBG] Created DbConnection. (13ms).
+2023-05-23 14:13:21.529 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (25ms).
+2023-05-23 14:13:21.532 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (28ms).
+2023-05-23 14:13:21.540 +03:00 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-05-23 14:13:21.553 +03:00 [DBG] Opened connection to database 'main' on server 'C:\Users\Antonia.Grosan\Desktop\Antonia\Projects\webAPI-asp-dot-net-core6\CityInfo\CityInfo.API\CityInfo.db'.
+2023-05-23 14:13:21.563 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Cities" AS "c"
+2023-05-23 14:13:21.583 +03:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Cities" AS "c"
+2023-05-23 14:13:21.596 +03:00 [DBG] Closing data reader to 'main' on server 'C:\Users\Antonia.Grosan\Desktop\Antonia\Projects\webAPI-asp-dot-net-core6\CityInfo\CityInfo.API\CityInfo.db'.
+2023-05-23 14:13:21.604 +03:00 [DBG] A data reader for 'main' on server 'C:\Users\Antonia.Grosan\Desktop\Antonia\Projects\webAPI-asp-dot-net-core6\CityInfo\CityInfo.API\CityInfo.db' is being disposed after spending 12ms reading results.
+2023-05-23 14:13:21.611 +03:00 [DBG] Closing connection to database 'main' on server 'C:\Users\Antonia.Grosan\Desktop\Antonia\Projects\webAPI-asp-dot-net-core6\CityInfo\CityInfo.API\CityInfo.db'.
+2023-05-23 14:13:21.616 +03:00 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (4ms).
+2023-05-23 14:13:21.627 +03:00 [DBG] Compiling query expression: 
+'DbSet<City>()
+    .OrderBy(c => c.Name)
+    .Skip(__p_0)
+    .Take(__p_1)'
+2023-05-23 14:13:21.677 +03:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<City>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: City.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: City.Description (string) MaxLength(200), 1], [Property: City.Name (string) Required MaxLength(50), 2] }
+        SELECT c.Id, c.Description, c.Name
+        FROM Cities AS c
+        ORDER BY c.Name ASC
+        OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, City>, 
+    CityInfo.API.DbContexts.CityInfoContext, 
+    False, 
+    False, 
+    True
+)'
+2023-05-23 14:13:21.693 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-05-23 14:13:21.694 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2023-05-23 14:13:21.700 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (6ms).
+2023-05-23 14:13:21.701 +03:00 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-05-23 14:13:21.703 +03:00 [DBG] Opened connection to database 'main' on server 'C:\Users\Antonia.Grosan\Desktop\Antonia\Projects\webAPI-asp-dot-net-core6\CityInfo\CityInfo.API\CityInfo.db'.
+2023-05-23 14:13:21.710 +03:00 [DBG] Executing DbCommand [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Description", "c"."Name"
+FROM "Cities" AS "c"
+ORDER BY "c"."Name"
+LIMIT @__p_1 OFFSET @__p_0
+2023-05-23 14:13:21.718 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Description", "c"."Name"
+FROM "Cities" AS "c"
+ORDER BY "c"."Name"
+LIMIT @__p_1 OFFSET @__p_0
+2023-05-23 14:13:21.739 +03:00 [DBG] Context 'CityInfoContext' started tracking 'City' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-23 14:13:21.752 +03:00 [DBG] Context 'CityInfoContext' started tracking 'City' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-23 14:13:21.754 +03:00 [DBG] Context 'CityInfoContext' started tracking 'City' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-23 14:13:21.756 +03:00 [DBG] Closing data reader to 'main' on server 'C:\Users\Antonia.Grosan\Desktop\Antonia\Projects\webAPI-asp-dot-net-core6\CityInfo\CityInfo.API\CityInfo.db'.
+2023-05-23 14:13:21.758 +03:00 [DBG] A data reader for 'main' on server 'C:\Users\Antonia.Grosan\Desktop\Antonia\Projects\webAPI-asp-dot-net-core6\CityInfo\CityInfo.API\CityInfo.db' is being disposed after spending 38ms reading results.
+2023-05-23 14:13:21.759 +03:00 [DBG] Closing connection to database 'main' on server 'C:\Users\Antonia.Grosan\Desktop\Antonia\Projects\webAPI-asp-dot-net-core6\CityInfo\CityInfo.API\CityInfo.db'.
+2023-05-23 14:13:21.760 +03:00 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (0ms).
+2023-05-23 14:13:21.779 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-05-23 14:13:21.785 +03:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2023-05-23 14:13:21.786 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-05-23 14:13:21.789 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CityInfo.API.Models.CityWithoutPoisDto, CityInfo.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-23 14:13:21.906 +03:00 [INF] Executed action CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API) in 1702.1411ms
+2023-05-23 14:13:21.908 +03:00 [INF] Executed endpoint 'CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API)'
+2023-05-23 14:13:21.913 +03:00 [DBG] 'CityInfoContext' disposed.
+2023-05-23 14:13:21.923 +03:00 [DBG] Disposing connection to database 'main' on server 'CityInfo.db'.
+2023-05-23 14:13:21.927 +03:00 [DBG] Disposed connection to database 'main' on server 'CityInfo.db' (4ms).
+2023-05-23 14:13:21.929 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7005/api/cities?pageNumber=1&pageSize=10 - - - 200 247 application/json;+charset=utf-8 1882.1118ms
+2023-05-23 23:38:06.457 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-05-23 23:38:07.055 +03:00 [DBG] Hosting starting
+2023-05-23 23:38:07.190 +03:00 [INF] User profile is available. Using 'C:\Users\Antonia.Grosan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-05-23 23:38:07.214 +03:00 [DBG] Reading data from file 'C:\Users\Antonia.Grosan\AppData\Local\ASP.NET\DataProtection-Keys\key-5b6e286d-8141-4714-bc5b-22bc6f79e4c5.xml'.
+2023-05-23 23:38:07.252 +03:00 [DBG] Found key {5b6e286d-8141-4714-bc5b-22bc6f79e4c5}.
+2023-05-23 23:38:07.313 +03:00 [DBG] Considering key {5b6e286d-8141-4714-bc5b-22bc6f79e4c5} with expiration date 2023-08-19 11:48:22Z as default key.
+2023-05-23 23:38:07.325 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-05-23 23:38:07.340 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2023-05-23 23:38:07.351 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-05-23 23:38:07.376 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2023-05-23 23:38:07.385 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2023-05-23 23:38:07.399 +03:00 [DBG] Using key {5b6e286d-8141-4714-bc5b-22bc6f79e4c5} as the default key.
+2023-05-23 23:38:07.402 +03:00 [DBG] Key ring with default key {5b6e286d-8141-4714-bc5b-22bc6f79e4c5} was loaded during application startup.
+2023-05-23 23:38:07.753 +03:00 [DBG] Using development certificate: CN=localhost (Thumbprint: E9CC24F2CE38B848EA7D86F43AB3036475D81F7F)
+2023-05-23 23:38:07.915 +03:00 [INF] Now listening on: https://localhost:7005
+2023-05-23 23:38:07.919 +03:00 [INF] Now listening on: http://localhost:5142
+2023-05-23 23:38:07.923 +03:00 [DBG] Loaded hosting startup assembly CityInfo.API
+2023-05-23 23:38:07.933 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-05-23 23:38:07.942 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-05-23 23:38:07.954 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-23 23:38:07.956 +03:00 [INF] Hosting environment: Development
+2023-05-23 23:38:07.967 +03:00 [INF] Content root path: C:\Users\Antonia.Grosan\Desktop\Antonia\Projects\webAPI-asp-dot-net-core6\CityInfo\CityInfo.API\
+2023-05-23 23:38:07.974 +03:00 [DBG] Hosting started
+2023-05-23 23:38:32.697 +03:00 [DBG] Connection id "0HMQRPMMB5IVG" accepted.
+2023-05-23 23:38:32.734 +03:00 [DBG] Connection id "0HMQRPMMB5IVG" started.
+2023-05-23 23:38:32.855 +03:00 [DBG] Connection 0HMQRPMMB5IVG established using the following protocol: "Tls12"
+2023-05-23 23:38:32.934 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7005/swagger/index.html - -
+2023-05-23 23:38:32.994 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-05-23 23:38:33.417 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-05-23 23:38:33.646 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7005/_framework/aspnetcore-browser-refresh.js - -
+2023-05-23 23:38:33.647 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7005/_vs/browserLink - -
+2023-05-23 23:38:33.647 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7005/swagger/swagger-ui.css - -
+2023-05-23 23:38:33.666 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-05-23 23:38:33.695 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7005/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 47.3381ms
+2023-05-23 23:38:33.704 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7005/swagger/index.html - - - 200 - text/html;charset=utf-8 775.3196ms
+2023-05-23 23:38:33.711 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-05-23 23:38:33.727 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7005/swagger/swagger-ui.css - - - 200 143632 text/css 80.0666ms
+2023-05-23 23:38:33.788 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7005/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 141.5489ms
+2023-05-23 23:38:33.984 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7005/swagger/v1/swagger.json - -
+2023-05-23 23:38:33.990 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7005/swagger/favicon-32x32.png - -
+2023-05-23 23:38:34.002 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-05-23 23:38:34.011 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7005/swagger/favicon-32x32.png - - - 200 628 image/png 20.6339ms
+2023-05-23 23:38:34.310 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7005/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 325.4689ms
+2023-05-23 23:43:29.945 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-05-23 23:43:30.271 +03:00 [DBG] Hosting starting
+2023-05-23 23:43:30.354 +03:00 [INF] User profile is available. Using 'C:\Users\Antonia.Grosan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-05-23 23:43:30.371 +03:00 [DBG] Reading data from file 'C:\Users\Antonia.Grosan\AppData\Local\ASP.NET\DataProtection-Keys\key-5b6e286d-8141-4714-bc5b-22bc6f79e4c5.xml'.
+2023-05-23 23:43:30.401 +03:00 [DBG] Found key {5b6e286d-8141-4714-bc5b-22bc6f79e4c5}.
+2023-05-23 23:43:30.447 +03:00 [DBG] Considering key {5b6e286d-8141-4714-bc5b-22bc6f79e4c5} with expiration date 2023-08-19 11:48:22Z as default key.
+2023-05-23 23:43:30.464 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-05-23 23:43:30.486 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2023-05-23 23:43:30.496 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-05-23 23:43:30.517 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2023-05-23 23:43:30.545 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2023-05-23 23:43:30.564 +03:00 [DBG] Using key {5b6e286d-8141-4714-bc5b-22bc6f79e4c5} as the default key.
+2023-05-23 23:43:30.568 +03:00 [DBG] Key ring with default key {5b6e286d-8141-4714-bc5b-22bc6f79e4c5} was loaded during application startup.
+2023-05-23 23:43:30.886 +03:00 [DBG] Using development certificate: CN=localhost (Thumbprint: E9CC24F2CE38B848EA7D86F43AB3036475D81F7F)
+2023-05-23 23:43:31.016 +03:00 [INF] Now listening on: https://localhost:7005
+2023-05-23 23:43:31.021 +03:00 [INF] Now listening on: http://localhost:5142
+2023-05-23 23:43:31.030 +03:00 [DBG] Loaded hosting startup assembly CityInfo.API
+2023-05-23 23:43:31.061 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-05-23 23:43:31.078 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-05-23 23:43:31.085 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-23 23:43:31.097 +03:00 [INF] Hosting environment: Development
+2023-05-23 23:43:31.111 +03:00 [INF] Content root path: C:\Users\Antonia.Grosan\Desktop\Antonia\Projects\webAPI-asp-dot-net-core6\CityInfo\CityInfo.API\
+2023-05-23 23:43:31.117 +03:00 [DBG] Hosting started
+2023-05-23 23:43:58.665 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-05-23 23:43:59.251 +03:00 [DBG] Hosting starting
+2023-05-23 23:43:59.443 +03:00 [INF] User profile is available. Using 'C:\Users\Antonia.Grosan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-05-23 23:43:59.473 +03:00 [DBG] Reading data from file 'C:\Users\Antonia.Grosan\AppData\Local\ASP.NET\DataProtection-Keys\key-5b6e286d-8141-4714-bc5b-22bc6f79e4c5.xml'.
+2023-05-23 23:43:59.542 +03:00 [DBG] Found key {5b6e286d-8141-4714-bc5b-22bc6f79e4c5}.
+2023-05-23 23:43:59.610 +03:00 [DBG] Considering key {5b6e286d-8141-4714-bc5b-22bc6f79e4c5} with expiration date 2023-08-19 11:48:22Z as default key.
+2023-05-23 23:43:59.635 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-05-23 23:43:59.649 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2023-05-23 23:43:59.657 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-05-23 23:43:59.679 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2023-05-23 23:43:59.689 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2023-05-23 23:43:59.705 +03:00 [DBG] Using key {5b6e286d-8141-4714-bc5b-22bc6f79e4c5} as the default key.
+2023-05-23 23:43:59.708 +03:00 [DBG] Key ring with default key {5b6e286d-8141-4714-bc5b-22bc6f79e4c5} was loaded during application startup.
+2023-05-23 23:44:00.181 +03:00 [DBG] Using development certificate: CN=localhost (Thumbprint: E9CC24F2CE38B848EA7D86F43AB3036475D81F7F)
+2023-05-23 23:44:00.294 +03:00 [INF] Now listening on: https://localhost:7005
+2023-05-23 23:44:00.298 +03:00 [INF] Now listening on: http://localhost:5142
+2023-05-23 23:44:00.306 +03:00 [DBG] Loaded hosting startup assembly CityInfo.API
+2023-05-23 23:44:00.313 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-05-23 23:44:00.321 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-05-23 23:44:00.327 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-23 23:44:00.330 +03:00 [INF] Hosting environment: Development
+2023-05-23 23:44:00.331 +03:00 [INF] Content root path: C:\Users\Antonia.Grosan\Desktop\Antonia\Projects\webAPI-asp-dot-net-core6\CityInfo\CityInfo.API\
+2023-05-23 23:44:00.334 +03:00 [DBG] Hosting started

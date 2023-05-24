@@ -10,7 +10,9 @@ namespace CityInfo.API.Controllers
     [ApiController]
     [Authorize]
     // Can also add "api/[controller] BUT if we refactor it is not ok because the url will change
-    [Route("api/cities")]
+    [ApiVersion("1.0")]
+    [ApiVersion("2.0")]
+    [Route("api/v{version:apiVersion}/cities")]
     public class CitiesController : ControllerBase
     {
         private readonly ICityInfoRepository _cityInfoRepository;
@@ -43,7 +45,17 @@ namespace CityInfo.API.Controllers
             return Ok(_mapper.Map<IEnumerable<CityWithoutPoisDto>>(cityEntities));
         }
 
+        /// <summary>
+        /// Get a city by its id
+        /// </summary>
+        /// <param name="id">The id of the city to get</param>
+        /// <param name="includePointsOfInterest">Shows whether or not the points of interest of the city will be shown</param>
+        /// <returns>An IAction result</returns>
+        /// <response code="200">Returns the requested city</response>
         [HttpGet("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> GetCity(int id, bool includePointsOfInterest = false)
         {
             var cityEntity = await _cityInfoRepository.GetCityAsync(id, includePointsOfInterest);

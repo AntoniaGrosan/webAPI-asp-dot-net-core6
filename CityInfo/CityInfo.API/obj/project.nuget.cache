@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "HirV3zNLseeP3nOlX2ta/LAsBsA7jUgtBnX1rnjBNdgkUHvCdUo7MuZ7Gax3lc4RhLtmJDmZB9v/IafwaVuDCw==",
+  "dgSpecHash": "su7vNUrqsTfmOICe+2s7iF8PlpYAjq3pvKvuooWumo8ze9EFomXIu6dmM3aaaYbyc3yw/DZFQUgf6/EYpdKKBQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Antonia.Grosan\\Desktop\\Antonia\\Projects\\webAPI-asp-dot-net-core6\\CityInfo\\CityInfo.API\\CityInfo.API.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "C:\\Users\\Antonia.Grosan\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.0\\microsoft.aspnetcore.authentication.jwtbearer.6.0.0.nupkg.sha512",
     "C:\\Users\\Antonia.Grosan\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\7.0.5\\microsoft.aspnetcore.jsonpatch.7.0.5.nupkg.sha512",
     "C:\\Users\\Antonia.Grosan\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\6.0.16\\microsoft.aspnetcore.mvc.newtonsoftjson.6.0.16.nupkg.sha512",
+    "C:\\Users\\Antonia.Grosan\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\5.0.0\\microsoft.aspnetcore.mvc.versioning.5.0.0.nupkg.sha512",
     "C:\\Users\\Antonia.Grosan\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Antonia.Grosan\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.5\\microsoft.data.sqlite.core.7.0.5.nupkg.sha512",
     "C:\\Users\\Antonia.Grosan\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.5\\microsoft.entityframeworkcore.7.0.5.nupkg.sha512",

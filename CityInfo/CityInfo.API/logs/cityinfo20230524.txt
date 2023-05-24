@@ -1,0 +1,67 @@
+2023-05-24 00:01:18.254 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-05-24 00:01:18.616 +03:00 [DBG] Hosting starting
+2023-05-24 00:01:18.730 +03:00 [INF] User profile is available. Using 'C:\Users\Antonia.Grosan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-05-24 00:01:18.749 +03:00 [DBG] Reading data from file 'C:\Users\Antonia.Grosan\AppData\Local\ASP.NET\DataProtection-Keys\key-5b6e286d-8141-4714-bc5b-22bc6f79e4c5.xml'.
+2023-05-24 00:01:18.782 +03:00 [DBG] Found key {5b6e286d-8141-4714-bc5b-22bc6f79e4c5}.
+2023-05-24 00:01:18.819 +03:00 [DBG] Considering key {5b6e286d-8141-4714-bc5b-22bc6f79e4c5} with expiration date 2023-08-19 11:48:22Z as default key.
+2023-05-24 00:01:18.830 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-05-24 00:01:18.849 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2023-05-24 00:01:18.857 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-05-24 00:01:18.875 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2023-05-24 00:01:18.912 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2023-05-24 00:01:18.926 +03:00 [DBG] Using key {5b6e286d-8141-4714-bc5b-22bc6f79e4c5} as the default key.
+2023-05-24 00:01:18.932 +03:00 [DBG] Key ring with default key {5b6e286d-8141-4714-bc5b-22bc6f79e4c5} was loaded during application startup.
+2023-05-24 00:01:19.236 +03:00 [DBG] Using development certificate: CN=localhost (Thumbprint: E9CC24F2CE38B848EA7D86F43AB3036475D81F7F)
+2023-05-24 00:01:19.371 +03:00 [INF] Now listening on: https://localhost:7005
+2023-05-24 00:01:19.374 +03:00 [INF] Now listening on: http://localhost:5142
+2023-05-24 00:01:19.380 +03:00 [DBG] Loaded hosting startup assembly CityInfo.API
+2023-05-24 00:01:19.409 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-05-24 00:01:19.439 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-05-24 00:01:19.474 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-24 00:01:19.480 +03:00 [INF] Hosting environment: Development
+2023-05-24 00:01:19.485 +03:00 [INF] Content root path: C:\Users\Antonia.Grosan\Desktop\Antonia\Projects\webAPI-asp-dot-net-core6\CityInfo\CityInfo.API\
+2023-05-24 00:01:19.488 +03:00 [DBG] Hosting started
+2023-05-24 00:01:42.353 +03:00 [DBG] Connection id "0HMQRQ3KFVJOV" accepted.
+2023-05-24 00:01:42.375 +03:00 [DBG] Connection id "0HMQRQ3KFVJOV" started.
+2023-05-24 00:01:42.537 +03:00 [DBG] Connection 0HMQRQ3KFVJOV established using the following protocol: "Tls12"
+2023-05-24 00:01:42.656 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7005/api/authentication/authenticate application/json 50
+2023-05-24 00:01:42.699 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-05-24 00:01:42.809 +03:00 [DBG] POST requests are not supported
+2023-05-24 00:01:42.905 +03:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/authenticate'
+2023-05-24 00:01:42.927 +03:00 [DBG] Endpoint 'CityInfo.API.Controllers.AuthenticationController.Authenticate (CityInfo.API)' with route pattern 'api/authentication/authenticate' is valid for the request path '/api/authentication/authenticate'
+2023-05-24 00:01:42.984 +03:00 [DBG] Request matched endpoint 'CityInfo.API.Controllers.AuthenticationController.Authenticate (CityInfo.API)'
+2023-05-24 00:01:43.148 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-05-24 00:01:43.165 +03:00 [INF] Executing endpoint 'CityInfo.API.Controllers.AuthenticationController.Authenticate (CityInfo.API)'
+2023-05-24 00:01:43.234 +03:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.String] Authenticate(AuthRequestBody) on controller CityInfo.API.Controllers.AuthenticationController (CityInfo.API).
+2023-05-24 00:01:43.262 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-05-24 00:01:43.283 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-05-24 00:01:43.288 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2023-05-24 00:01:43.296 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-05-24 00:01:43.305 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2023-05-24 00:01:43.307 +03:00 [DBG] Executing controller factory for controller CityInfo.API.Controllers.AuthenticationController (CityInfo.API)
+2023-05-24 00:01:43.316 +03:00 [DBG] Executed controller factory for controller CityInfo.API.Controllers.AuthenticationController (CityInfo.API)
+2023-05-24 00:01:43.321 +03:00 [DBG] Attempting to bind parameter 'authRequestBody' of type 'CityInfo.API.Controllers.AuthenticationController+AuthRequestBody' ...
+2023-05-24 00:01:43.326 +03:00 [DBG] Attempting to bind parameter 'authRequestBody' of type 'CityInfo.API.Controllers.AuthenticationController+AuthRequestBody' using the name '' in request data ...
+2023-05-24 00:01:43.338 +03:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2023-05-24 00:01:43.346 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2023-05-24 00:01:43.366 +03:00 [DBG] Connection id "0HMQRQ3KFVJOV", Request id "0HMQRQ3KFVJOV:00000001": started reading request body.
+2023-05-24 00:01:43.371 +03:00 [DBG] Connection id "0HMQRQ3KFVJOV", Request id "0HMQRQ3KFVJOV:00000001": done reading request body.
+2023-05-24 00:01:43.681 +03:00 [DBG] Done attempting to bind parameter 'authRequestBody' of type 'CityInfo.API.Controllers.AuthenticationController+AuthRequestBody'.
+2023-05-24 00:01:43.691 +03:00 [DBG] Done attempting to bind parameter 'authRequestBody' of type 'CityInfo.API.Controllers.AuthenticationController+AuthRequestBody'.
+2023-05-24 00:01:43.703 +03:00 [DBG] Attempting to validate the bound parameter 'authRequestBody' of type 'CityInfo.API.Controllers.AuthenticationController+AuthRequestBody' ...
+2023-05-24 00:01:43.718 +03:00 [DBG] Done attempting to validate the bound parameter 'authRequestBody' of type 'CityInfo.API.Controllers.AuthenticationController+AuthRequestBody'.
+2023-05-24 00:01:44.035 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-05-24 00:01:44.065 +03:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2023-05-24 00:01:44.069 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-05-24 00:01:44.072 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-05-24 00:01:44.213 +03:00 [INF] Executed action CityInfo.API.Controllers.AuthenticationController.Authenticate (CityInfo.API) in 891.5137ms
+2023-05-24 00:01:44.238 +03:00 [INF] Executed endpoint 'CityInfo.API.Controllers.AuthenticationController.Authenticate (CityInfo.API)'
+2023-05-24 00:01:44.254 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7005/api/authentication/authenticate application/json 50 - 200 298 application/json;+charset=utf-8 1604.0571ms
+2023-05-24 00:04:04.729 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7005/swagger/v1/swagger.json - -
+2023-05-24 00:04:05.340 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7005/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 612.1842ms
+2023-05-24 00:04:05.390 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7005/favicon.ico - -
+2023-05-24 00:04:05.397 +03:00 [DBG] The request path  does not match the path filter
+2023-05-24 00:04:05.403 +03:00 [DBG] No candidates found for the request path '/favicon.ico'
+2023-05-24 00:04:05.404 +03:00 [DBG] Request did not match any endpoints
+2023-05-24 00:04:05.408 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-05-24 00:04:05.409 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7005/favicon.ico - - - 404 0 - 19.4808ms

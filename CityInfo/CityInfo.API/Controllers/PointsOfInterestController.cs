@@ -12,9 +12,10 @@ using Microsoft.AspNetCore.Mvc.Formatters;
 
 namespace CityInfo.API.Controllers
 {
-    [Route("api/cities/{cityId}/pointsofinterest")]
+    [Route("api/v{version:apiVersion}/cities/{cityId}/pointsofinterest")]
     // this policy is required in order to perform all of these actions
     [Authorize(Policy = "MustBeFromAntwerp")]
+    [ApiVersion("2.0")]
     [ApiController]
     public class PointsOfInterestController : ControllerBase
     {
@@ -28,8 +29,7 @@ namespace CityInfo.API.Controllers
         public PointsOfInterestController(ILogger<PointsOfInterestController> logger,
             IMailService localMailService,
             ICityInfoRepository cityInfoRepository,
-            IMapper mapper
-            )
+            IMapper mapper)
         {
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
             _mailService = localMailService ?? throw new ArgumentNullException(nameof(localMailService));
